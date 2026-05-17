@@ -296,7 +296,7 @@
 <script>
 // ─── CONFIGURACIÓN GOOGLE SHEETS ─────────────────────────────────────
 // 👇 PASO 1: Pega aquí la URL de tu Google Apps Script (ver instrucciones abajo)
-const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbx49pXwV8ebsovdsIoH0SIW6i1keqOamQHrngej3aeDI4EGYPELxn60bMCxwQHfvBIWFA/exec';
+const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwjgJpFbLMt-Chu4yaW83eo8enVz5l8WJ-C_v3TNY_KtZHfCfPaM5S9uKkUW4C3SJWEPQ/exec';
 
 // ─── DATOS DE TALLERES ───────────────────────────────────────────────
 // Cada taller tiene: id único, cupo máximo (20 por default)
@@ -627,7 +627,7 @@ async function confirmarRegistro() {
   };
 
   try {
-    if (GOOGLE_SCRIPT_URL && GOOGLE_SCRIPT_URL !== 'https://script.google.com/macros/s/AKfycbx49pXwV8ebsovdsIoH0SIW6i1keqOamQHrngej3aeDI4EGYPELxn60bMCxwQHfvBIWFA/exec') {
+    if (GOOGLE_SCRIPT_URL && GOOGLE_SCRIPT_URL !== 'https://script.google.com/macros/s/AKfycbwjgJpFbLMt-Chu4yaW83eo8enVz5l8WJ-C_v3TNY_KtZHfCfPaM5S9uKkUW4C3SJWEPQ/exec') {
       await fetch(GOOGLE_SCRIPT_URL, {
         method: 'POST',
         mode: 'no-cors',
@@ -716,8 +716,8 @@ async function confirmarRegistro() {
   PASO 4 — Pegar la URL en este archivo
   ──────────────────────────────────────
   1. Abre este archivo HTML en un editor de texto
-  2. Busca la línea: const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbx49pXwV8ebsovdsIoH0SIW6i1keqOamQHrngej3aeDI4EGYPELxn60bMCxwQHfvBIWFA/exec';
-  3. Reemplaza https://script.google.com/macros/s/AKfycbx49pXwV8ebsovdsIoH0SIW6i1keqOamQHrngej3aeDI4EGYPELxn60bMCxwQHfvBIWFA/exec por la URL que copiaste
+  2. Busca la línea: const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwjgJpFbLMt-Chu4yaW83eo8enVz5l8WJ-C_v3TNY_KtZHfCfPaM5S9uKkUW4C3SJWEPQ/exec';
+  3. Reemplaza https://script.google.com/macros/s/AKfycbwjgJpFbLMt-Chu4yaW83eo8enVz5l8WJ-C_v3TNY_KtZHfCfPaM5S9uKkUW4C3SJWEPQ/exec por la URL que copiaste
   4. Guarda el archivo ✅
 
   ¡Listo! Cada registro llegará automáticamente a tu Google Sheet.
