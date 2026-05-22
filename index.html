@@ -317,57 +317,69 @@ const slots = [
     time: '07:30', endTime: '08:00',
     type: 'full', label: '🎉 REGISTRO Y BIENVENIDA', fullClass: ''
   },
+
+  // ── 08:00 ──────────────────────────────────────────────────────
   {
     time: '08:00', endTime: '09:00', type: 'normal',
     areas: [
-      { id:'08-luxury', activity: 'CONSCIENCIA CORPORAL', instructor: 'Lic. Mariana Leija', cupo: CUPO_DEFAULT },
-      { id:'08-royal',  activity: 'RESPIRACIÓN CONSCIENTE', instructor: 'Lic. Cecy Lara', cupo: CUPO_DEFAULT },
-      { id:'08-deluxe', activity: 'YOGA ASHTANGA', instructor: 'Lic. Pamela Álvarez', cupo: CUPO_DEFAULT },
+      { id:'08-elite',  activity: 'CONSCIENCIA CORPORAL',    instructor: 'Lic. Mariana Leija',   cupo: 20 },
+      { id:'08-royal',  activity: 'RESPIRACIÓN CONSCIENTE',  instructor: 'Lic. Cecy Lara',        cupo: 20 },
+      { id:'08-deluxe', activity: 'YOGA',                    instructor: 'HEALNESS',               cupo: 20 },
       null,
-      { id:'08-jardin', activity: 'FUNCTIONAL TRAIN', instructor: 'Coach Manuel Ibarra', cupo: CUPO_DEFAULT },
-      { id:'08-bar',    activity: 'BARRAS DE ACCESS + MASAJES', tag: 'Permanente', cupo: CUPO_DEFAULT },
+      { id:'08-jardin', activity: 'FUNCTIONAL TRAIN',        instructor: 'Coach Manuel Ibarra',    cupo: 20 },
+      { id:'08-bar',    activity: 'BARRAS DE ACCESS + MASAJES', tag: 'Permanente',                 cupo: 20 },
     ]
   },
+
+  // ── 09:00 ──────────────────────────────────────────────────────
   {
     time: '09:00', endTime: '10:00', type: 'normal',
     areas: [
-      { id:'09-luxury', activity: 'JUMPING (1/2)', instructor: 'Coach Paty Sánchez', cupo: CUPO_DEFAULT },
-      { id:'09-royal',  activity: 'RESPIRACIÓN CONSCIENTE', instructor: 'Lic. Cecy Lara', cupo: CUPO_DEFAULT },
-      { id:'09-deluxe', activity: 'TALLER: TÉCNICAS DE RESPIRACIÓN + CUENCOS TIBETANOS', instructor: 'Coach Elsa Dávila', cupo: CUPO_DEFAULT },
-      { id:'09-elite',  activity: 'YOGA', instructor: 'Coach Freddy López', cupo: CUPO_DEFAULT },
-      { id:'09-jardin', activity: 'FUNCTIONAL TRAIN', instructor: 'Cykel', cupo: CUPO_DEFAULT },
-      { id:'09-bar',    activity: 'BARRAS DE ACCESS + MASAJES', tag: 'Permanente', cupo: CUPO_DEFAULT },
+      { id:'09-elite',  activity: 'TÉCNICAS DE RESPIRACIÓN + CUENCOS TIBETANOS', instructor: 'Coach Elsa Dávila',    cupo: 20 },
+      { id:'09-royal',  activity: 'RESPIRACIÓN CONSCIENTE',                       instructor: 'Lic. Cecy Lara',       cupo: 20 },
+      { id:'09-deluxe', activity: 'YOGA ASHTANGA',                                instructor: 'Lic. Pamela Álvarez',  cupo: 20 },
+      null,
+      { id:'09-jardin', activity: 'FUNCTIONAL TRAIN',                             instructor: 'Cykel',                cupo: 20 },
+      { id:'09-bar',    activity: 'BARRAS DE ACCESS + MASAJES', tag: 'Permanente',                                    cupo: 20 },
     ]
   },
+
+  // ── 10:00 ──────────────────────────────────────────────────────
   {
-    time: '10:00', endTime: '11:15', type: 'normal',
+    time: '10:00', endTime: '11:00', type: 'normal',
     areas: [
-      { id:'10-luxury', activity: 'JUMPING (2/2)', instructor: 'Coach Paty Sánchez', cupo: CUPO_DEFAULT },
-      { id:'10-royal',  activity: 'RESPIRACIÓN CONSCIENTE', instructor: 'Lic. Cecy Lara', cupo: CUPO_DEFAULT },
-      { id:'10-deluxe', activity: 'EL IMPACTO DEL BIOHACKING EN NUESTRA SALUD', instructor: 'Dr. Guillermo Barquet', cupo: CUPO_DEFAULT },
-      { id:'10-elite',  activity: 'YOGA SCULPT', instructor: 'Instr. Alejandra Melo', cupo: CUPO_DEFAULT },
-      { id:'10-jardin', activity: 'CONFERENCIA: EL SENTIDO DE TU EXISTENCIA', instructor: 'Lic. Elsa Dávila', cupo: CUPO_DEFAULT },
-      { id:'10-bar',    activity: 'BARRAS DE ACCESS + MASAJES', tag: 'Permanente', cupo: CUPO_DEFAULT },
+      { id:'10-elite',  activity: 'EL IMPACTO DEL BIOHACKING EN NUESTRA SALUD',  instructor: 'Dr. Guillermo Barquet',  cupo: 20 },
+      { id:'10-royal',  activity: 'RESPIRACIÓN CONSCIENTE',                        instructor: 'Lic. Cecy Lara',         cupo: 20 },
+      { id:'10-deluxe', activity: 'YOGA SCULPT',                                   instructor: 'Instr. Alejandra Melo',  cupo: 20 },
+      null,
+      { id:'10-jardin', activity: 'EL SENTIDO DE TU EXISTENCIA',                   instructor: 'Lic. Elsa Dávila',       cupo: 20 },
+      { id:'10-bar',    activity: 'BARRAS DE ACCESS + MASAJES', tag: 'Permanente',                                        cupo: 20 },
     ]
   },
+
+  // ── 11:15 Cykel ────────────────────────────────────────────────
   {
-    time: '11:15', endTime: '11:30',
+    time: '11:15', endTime: '12:00',
     type: 'full',
     label: '🚴 CLASE EXTERNA — RIDE LATIENDO JUNTOS • Cykel Norte',
     fullClass: 'cikel',
     fullId: '1115-ride', fullCupo: 30
   },
+
+  // ── 11:30 ──────────────────────────────────────────────────────
   {
     time: '11:30', endTime: '12:30', type: 'normal',
     areas: [
-      { id:'1130-luxury', activity: 'ZUMBA SENTAO', instructor: 'Coach Yandira Beltrán', cupo: CUPO_DEFAULT },
+      { id:'1130-elite',  activity: 'FLAMENCO TERAPIA',                         instructor: 'Mtra. Pilar Villarreal', cupo: 20 },
       null,
-      { id:'1130-deluxe', activity: 'SONOTERAPIA CON CUENCOS DE CUARZO (1/2)', instructor: 'Lic. Lezly Flores', cupo: CUPO_DEFAULT },
-      { id:'1130-elite',  activity: 'FLAMENCO TERAPIA', instructor: 'Mtra. Pilar Villarreal', cupo: CUPO_DEFAULT },
+      { id:'1130-deluxe', activity: 'SONOTERAPIA CON CUENCOS DE CUARZO (1/2)', instructor: 'Lic. Lezly Flores',      cupo: 20 },
+      { id:'1130-luxury', activity: 'ZUMBA SENTAO',                              instructor: 'Coach Yandira Beltrán',  cupo: 20 },
       null,
-      { id:'1130-bar',    activity: 'BARRAS DE ACCESS + MASAJES', tag: 'Permanente', cupo: CUPO_DEFAULT },
+      { id:'1130-bar',    activity: 'BARRAS DE ACCESS + MASAJES', tag: 'Permanente',                                   cupo: 20 },
     ]
   },
+
+  // ── 12:00 Zociety ──────────────────────────────────────────────
   {
     time: '12:00', endTime: '12:30',
     type: 'full',
@@ -375,36 +387,46 @@ const slots = [
     fullClass: 'cikel',
     fullId: '1200-ride', fullCupo: 23
   },
+
+  // ── 12:30 ──────────────────────────────────────────────────────
   {
     time: '12:30', endTime: '13:30', type: 'normal',
     areas: [
-      { id:'1230-luxury', activity: 'ZUMBA', instructor: 'Christian Gaspo', cupo: CUPO_DEFAULT },
-      { id:'1230-royal',  activity: 'DANCE FIT', instructor: 'Grupo VXN Saltillo', cupo: CUPO_DEFAULT },
-      { id:'1230-deluxe', activity: 'SONOTERAPIA CON CUENCOS DE CUARZO (2/2)', instructor: 'Lic. Lezly Flores', cupo: CUPO_DEFAULT },
-      { id:'1230-elite',  activity: 'CONFERENCIA: BIENESTAR Y PLENITUD', instructor: 'Dra. Laura Viñals', cupo: CUPO_DEFAULT },
       null,
-      { id:'1230-bar',    activity: 'BARRAS DE ACCESS + MASAJES', tag: 'Permanente', cupo: CUPO_DEFAULT },
+      { id:'1230-royal',  activity: 'DANCE FIT',                                  instructor: 'Grupo VXN Saltillo',    cupo: 20 },
+      { id:'1230-deluxe', activity: 'SONOTERAPIA CON CUENCOS DE CUARZO (2/2)',    instructor: 'Lic. Lezly Flores',     cupo: 20 },
+      { id:'1230-luxury', activity: 'ZUMBA',                                       instructor: 'Christian Gaspo',       cupo: 20 },
+      null,
+      { id:'1230-bar',    activity: 'BARRAS DE ACCESS + MASAJES', tag: 'Permanente',                                    cupo: 20 },
     ]
   },
+
+  // ── 13:30 Gong ─────────────────────────────────────────────────
   {
     time: '13:30', endTime: '14:00',
-    type: 'full', label: '🔔 BAÑO DE GONG — Hari Data Kaur • Para TODOS', fullClass: 'gong'
+    type: 'full', label: '🔔 BAÑO DE GONG — Hari Data Kaur • Jardín Salón • Para TODOS', fullClass: 'gong'
   },
+
+  // ── 14:00 ──────────────────────────────────────────────────────
   {
     time: '14:00', endTime: '15:00', type: 'normal',
     areas: [
       null,
-      { id:'14-royal',  activity: 'CEREMONIA DE CACAO', cupo: CUPO_DEFAULT },
+      { id:'14-royal',  activity: 'CEREMONIA DE CACAO',                                                              cupo: 20 },
       null,
       null,
-      { id:'14-jardin', activity: 'SANAR DESDE LA RAÍZ: NUTRICIÓN COMO ACTO REVOLUCIONARIO DE AMOR PROPIO', instructor: 'Lic. Mariana Gallardo', cupo: CUPO_DEFAULT },
-      { id:'14-bar',    activity: 'BARRAS DE ACCESS + MASAJES', tag: 'Permanente', cupo: CUPO_DEFAULT },
+      { id:'14-jardin', activity: 'SANAR DESDE LA RAÍZ: NUTRICIÓN COMO ACTO REVOLUCIONARIO', instructor: 'Lic. Mariana Gallardo', cupo: 20 },
+      { id:'14-bar',    activity: 'BARRAS DE ACCESS + MASAJES', tag: 'Permanente',                                    cupo: 20 },
     ]
   },
+
+  // ── 15:00 Monjes ───────────────────────────────────────────────
   {
     time: '15:00', endTime: '16:00',
     type: 'full', label: '🙏 MEDITACIÓN CON MONJES TAILANDESES • Para TODOS', fullClass: 'medit'
   },
+
+  // ── CIERRE ─────────────────────────────────────────────────────
   {
     time: '16:00', endTime: '16:01',
     type: 'full', label: '💜 ¡Gracias por latir juntos! 🦋', fullClass: 'cierre', timeLabel: '4:00 PM\nCIERRE'
